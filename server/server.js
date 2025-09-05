@@ -22,7 +22,12 @@ app.use("/api/auth", authRoutes);
 app.use("/api/ai", aiRoutes);   // ✅ This mounts your AI endpoints
 app.use("/api/scan", scanRoutes);
 app.use("/api/food", foodRoutes);
-app.get('/healthz', (req, res) => res.send('OK'));
+// Health check route
+app.get('/api/healthz', (req, res) => res.status(200).json({
+    status: 'OK',
+    message: 'CaloTrack backend is live!'
+}));
+
 
 
 // MongoDB Connection
