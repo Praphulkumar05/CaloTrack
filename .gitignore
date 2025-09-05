@@ -1,0 +1,15 @@
+# Ignore environment files
+client/.env
+server/.env
+
+# Node modules
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# Build outputs
+client/build/
+server/build/
+
+# Logs
+*.log
