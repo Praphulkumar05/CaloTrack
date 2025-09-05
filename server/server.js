@@ -22,6 +22,8 @@ app.use("/api/auth", authRoutes);
 app.use("/api/ai", aiRoutes);   // ✅ This mounts your AI endpoints
 app.use("/api/scan", scanRoutes);
 app.use("/api/food", foodRoutes);
+app.get('/healthz', (req, res) => res.send('OK'));
+
 
 // MongoDB Connection
 mongoose.connect(process.env.MONGO_URI)
