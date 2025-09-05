@@ -1,0 +1,199 @@
+.footer {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: white;
+
+  border: 1px solid rgba(37, 99, 235, 0.3);
+  border-radius: 16px; 
+  box-shadow: 0 4px 20px rgba(37, 99, 235, 0.25);
+}
+
+.newsletterBox {
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient(
+    to left top,
+    #330fd5,
+    #0059f3,
+    #0082fc,
+    #00a4f7,
+    #3dc2ed
+  );
+  color: black;
+  border-radius: 12px;
+  padding: 30px;
+  margin: 0 auto 50px auto; 
+  position: relative;
+  top: -70px; 
+  width: 90%;
+  max-width: 1100px;
+   justify-content: space-between;
+}
+.newsLeft img {
+  width: 80px; 
+  height: auto;
+}
+.newsRight {
+  position: relative;
+}
+
+.newsRight img {
+  position: absolute;
+  right: -40px;  /* controls how much it sticks out */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 300px;
+  height: auto;
+  margin-top: -80px;
+}
+.newsLeft {
+  flex: 1;
+}
+
+.vacuum {
+  width: 120px;
+}
+
+.newsRight {
+  flex: 2;
+}
+.newsRight small {
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+/* Footer Main */
+.footerMain {
+  display: flex;
+  justify-content: flex-start; /* align everything left */
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.footerCol {
+  flex: 1;
+  margin: 15px;
+  min-width: 150px;
+  color: black;
+}
+.blackLink {
+  color: black;
+  text-decoration: none;
+}
+
+.blackLink:hover {
+  color: #333; /* Slightly lighter black on hover */
+  text-decoration: underline;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footerCol h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: black;
+}
+
+.footerCol ul {
+  list-style: none;
+  padding: 0;
+  color: black;
+}
+
+.footerCol ul li {
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.footerCol ul li:hover {
+  color: #2563eb;
+}
+
+.socials {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* Bottom Footer */
+.footerBottom {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #ddd;
+  padding-top: 15px;
+  font-size: 14px;
+  flex-wrap: wrap;
+  color: black;
+}
+
+.footerBottom a {
+  margin-left: 15px;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footerBottom a:hover {
+  color: #2563eb;
+}
+
+.footerCol p {
+  color: black;
+}
+/* Style Services links inside footer */
+.footerCol ul li a {
+  color: black; /* black text */
+  text-decoration: none; /* remove underline */
+  transition: color 0.2s;
+}
+
+.footerCol ul li a:hover {
+  color: #2563eb; /* blue hover effect to match theme */
+}
+/* Target only the Services column */
+.servicesCol {
+  margin-left: auto; /* pushes it to the far right */
+}
+.logoBox {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* space between image and text */
+}
+
+.logoImg {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+  animation: floatUpDown 3s ease-in-out infinite;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.logoImg:hover {
+  transform: scale(1.1); /* makes it bigger on hover */
+}
+
+/* floating animation */
+@keyframes floatUpDown {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+.logoText {
+  font-size: 22px;
+  font-weight: bold;
+  color: #2563eb; /* green shade */
+}
+/* Add these styles to your existing AboutUs.module.css */
+

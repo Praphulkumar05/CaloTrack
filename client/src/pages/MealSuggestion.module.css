@@ -1,0 +1,109 @@
+
+.mealBox {
+ background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 0.155) 0%,
+    rgba(9, 9, 121, 1) 0%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  padding: 3rem 2rem;
+  margin: 3rem auto;
+  max-width: 800px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+}
+.toggleContainer {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0;
+  font-size: 1rem;
+  margin-right: 100px;
+}
+
+.button {
+  background-color: #00c853;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.6rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #00b34f;
+}
+
+.animationContainer {
+  margin-top: 2rem;
+  max-width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.suggestionBox {
+  background-color:white;
+  color: black;
+  padding: 2rem;
+  border-radius: 15px;
+  margin-top: 2rem;
+  text-align: left;
+  line-height: 1.8;
+  box-shadow: 0 0 10px rgba(0, 200, 83, 0.1);
+  font-size: 1rem;
+}
+
+.subHeading {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  color: #00e676;
+}
+
+.textLine {
+  margin-left: 1rem;
+  margin-bottom: 0.6rem;
+  color: #dee9e4;
+}
+
+.MainPage {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  
+   
+}
+
+.dropdownContainer {
+  margin: 20px auto;
+  text-align: center;
+  
+}
+
+.dropdownSelect {
+  padding: 10px 14px;
+  font-size: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  background-color:white;   
+  color:black;              
+  outline: none;
+  cursor: pointer;
+  transition: border 0.3s ease;
+}
+
+.dropdownSelect:hover,
+.dropdownSelect:focus {
+  border-color: #00bcd4;   
+  background-color: whitesmoke;
+}

@@ -1,0 +1,238 @@
+/* AboutUs.module.css */
+.aboutPage {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
+  padding: 2rem;
+}
+
+.container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.animationContainer {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #0e7490, #3b82f6, #4f46e5);
+  padding: 2rem;
+}
+
+.lottieAnimation {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
+
+.contentContainer {
+  flex: 2;
+  padding: 2rem;
+  overflow-y: auto;
+  max-height: 80vh;
+}
+
+.contentContainer h1 {
+  font-size: 2.5rem;
+  color: #0e7490;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.contentContainer h2 {
+  font-size: 1.8rem;
+  color: #3b82f6;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #e4e8f0;
+  padding-bottom: 0.5rem;
+}
+
+.contentContainer h3 {
+  font-size: 1.3rem;
+  color: #4f46e5;
+  margin: 1rem 0 0.5rem 0;
+}
+
+.contentContainer p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.heroSection {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.heroSection h2 {
+  color: #0e7490;
+  border-bottom: none;
+  font-size: 2rem;
+}
+
+.missionPoints {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.point {
+  background: #f8fafc;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid #3b82f6;
+}
+
+.technologySection {
+  background: linear-gradient(to right, #f0f9ff, #e0f2fe);
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin: 2rem 0;
+}
+
+.ctaSection {
+  text-align: center;
+  margin: 2.5rem 0;
+  padding: 2rem;
+  background: #f8fafc;
+  border-radius: 8px;
+}
+
+.ctaButtons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.primaryButton {
+  background: linear-gradient(to right, #0e7490, #3b82f6);
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.primaryButton:hover {
+  background: linear-gradient(to right, #0c6a83, #2563eb);
+  transform: translateY(-2px);
+}
+
+.secondaryButton {
+  background: transparent;
+  color: #3b82f6;
+  border: 2px solid #3b82f6;
+  padding: 0.8rem 1.5rem;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.secondaryButton:hover {
+  background: #3b82f6;
+  color: white;
+}
+
+.legalLinks {
+  text-align: center;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e4e8f0;
+}
+
+.legalLinks a {
+  color: #3b82f6;
+  text-decoration: none;
+}
+
+.legalLinks a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .aboutPage {
+    padding: 1rem;
+  }
+  
+  .container {
+    flex-direction: column;
+  }
+  
+  .animationContainer {
+    padding: 1rem;
+    min-height: 250px;
+  }
+  
+  .contentContainer {
+    padding: 1.5rem;
+    max-height: none;
+  }
+  
+  .missionPoints {
+    grid-template-columns: 1fr;
+  }
+  
+  .ctaButtons {
+    flex-direction: column;
+  }
+}
+
+/* Scrollbar styling for content container */
+.contentContainer::-webkit-scrollbar {
+  width: 8px;
+}
+
+.contentContainer::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.contentContainer::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+.contentContainer::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+/* Logo and heading styles */
+/* AboutUs.module.css */
+.logoHeadingContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  gap: 1rem;
+}
+
+.logo {
+  width: 40px; /* Small size */
+  height: 40px; /* Small size */
+  object-fit: contain;
+}
+
+/* For responsive design */
+@media (max-width: 768px) {
+  .logoHeadingContainer {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5rem;
+  }
+  
+  .logo {
+    width: 35px; /* Even smaller on mobile */
+    height: 35px;
+  }
+}

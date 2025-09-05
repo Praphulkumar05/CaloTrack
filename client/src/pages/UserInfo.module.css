@@ -1,0 +1,197 @@
+.container {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 0.155) 0%,
+    rgba(9, 9, 121, 1) 0%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  padding: 20px;
+  min-height: 100vh;
+}
+
+/* Greeting */
+.greeting {
+  margin-bottom: 15px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+/* Layout */
+.layout {
+  display: flex;
+  gap: 20px;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.sidebar button {
+  display: block;
+  padding: 10px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: black;
+}
+
+.sidebar button.active {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+}
+.content {
+  margin-left: 20px;
+  padding: 10px;
+}
+.active {
+  background: #e5f0ff;
+  color: #2563eb;
+  font-weight: 600;
+}
+
+/* Main content */
+.main {
+  flex: 1;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Profile Section */
+.profileHeader {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.subtitle {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.badgeActive,
+.badgeVerified {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  margin-right: 8px;
+}
+
+.badgeActive {
+  background: #dbeafe;
+  color: #2563eb;
+}
+
+.badgeVerified {
+  background: #dcfce7;
+  color: #16a34a;
+}
+
+/* Stats */
+.stats {
+  display: flex;
+  gap: 40px;
+  margin: 20px 0;
+}
+
+.stats div h3 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.stats div p {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+/* Info Section */
+.infoHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+}
+
+
+.editBtn {
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.infoGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-top: 15px;
+  color: black;
+}
+
+.accountVerified {
+  grid-column: span 2;
+  background: #f1f5f9;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+/* Streak Section */
+.streakSection {
+  margin-top: 20px;
+}
+
+.streakGrid {
+  display: grid;
+  grid-template-columns: repeat(7, 20px);
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.streakDay {
+  width: 20px;
+  height: 20px;
+  background: #e5e7eb;
+  border-radius: 4px;
+}
+
+.activeDay {
+  background: #2563eb;
+}
+.fade {
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+

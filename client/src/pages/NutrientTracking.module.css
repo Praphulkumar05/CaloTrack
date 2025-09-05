@@ -1,0 +1,186 @@
+body {
+  margin: 0;
+ background-color: #121212;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+.imageSection {
+  text-align: center;
+  width: 50rem;
+}
+
+.container {
+  margin: 0;
+  max-width: 800px;
+  padding: 20px;
+  background-color: #333;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  flex: 1;
+}
+.trackerSection {
+  width: 100%;
+  max-width: 800px;
+  margin-top: 20px;
+}
+h2 {
+  text-align: center;
+  color: #8d9497;
+  margin-bottom: 20px;
+}
+
+.inputGroup {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.inputGroup input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.inputGroup button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.inputGroup button:hover {
+  background-color: #218838;
+}
+
+.resultCard {
+  border: 1px solid #0e0d0dd4;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #121212;
+}
+
+
+.nutrientItem {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px dashed #ccc;
+  font-size: 15px;
+}
+
+h3 {
+  margin-top: 20px;
+color: #adb0b3;
+  border-bottom: 2px solid #b87217;
+  padding-bottom: 5px;
+}
+
+.chartSection {
+  margin-top: 30px;
+}
+
+.chartTitle {
+  text-align: center;
+  font-size: 20px;
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 600px) {
+  .inputGroup {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .inputGroup input {
+    width: 90%;
+  }
+
+  .inputGroup button {
+    width: 60%;
+  }
+}
+.readableList {
+  margin-top: 10px;
+  border-top: 1px dashed #302c2c;
+  padding-top: 10px;
+}
+.nutrientItem {
+  display: flex;
+  justify-content: space-between;
+  padding: 4px 0;
+  font-size: 14px;
+}
+.loadingContainer {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+.MacroImg {
+  width: 200px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.MacroImg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.nutritionIntro {
+  background-color: #1f1f1f;
+  color: #d3d3d3;
+  padding: 30px 25px;
+  border-radius: 12px;
+  margin-top: 30px;
+  animation: fadeIn 1.2s ease-in-out;
+  line-height: 1.7;
+  font-size: 16px;
+  max-width: 850px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nutritionIntro h3 {
+  color: #b87217;
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.nutritionIntro p {
+  margin-bottom: 16px;
+  color: #ccc;
+}
+
+.nutritionIntro strong {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.separator {
+  border-bottom: 2px solid #b87217;
+  margin-top: 25px;
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+

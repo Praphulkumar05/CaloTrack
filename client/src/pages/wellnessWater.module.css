@@ -1,0 +1,280 @@
+
+.container {
+  max-width: 200rem;
+  margin: 2rem auto;
+  padding: 2rem;
+ 
+  background-color: rgb(18, 17, 17);
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+  color: #004d40;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 1.2rem;
+  color: #00796b;
+}
+
+.inputSection {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  margin-left: 2rem;
+}
+
+.inputSection label {
+  font-weight: 500;
+  color: #00695c;
+}
+
+.inputSection input {
+  padding: 0.6rem;
+  font-size: 1rem;
+  border: 2px solid #b2dfdb;
+  border-radius: 6px;
+  transition: border 0.3s ease;
+  margin-top: 4px;
+}
+
+.inputSection input:focus {
+  border-color: #00796b;
+  outline: none;
+  box-shadow: 0 0 6px rgba(0, 150, 136, 0.3);
+}
+
+.inputSection button {
+  background-color: #388e3c;
+  color: white;
+  border: none;
+  padding: 0.6rem 1rem;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s ease;
+  width: 40rem;
+}
+
+.inputSection button:hover {
+  background-color: #2e7d32;
+  transform: scale(1.03);
+}
+
+.inputSection button:last-of-type {
+   background-color: #2e7d32;
+}
+
+.inputSection button:last-of-type:hover {
+   background-color: #2e7d32;
+}
+
+.recommendation {
+  background-color: #e0f2f1;
+  border-left: 5px solid #26a69a;
+  padding: 1rem;
+  border-radius: 6px;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+.waveContainer {
+  position: relative;
+  width: 100%;
+  height: 140px;
+  background-color: #b2ebf2;
+  border: 2px solid #0288d1;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 1.2rem;
+}
+
+.wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(to top, #00bcd4, #4dd0e1);
+  transition: height 0.4s ease-in-out;
+}
+
+.progressText {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  line-height: 140px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #004d40;
+}
+
+.logButton, .toggleButton {
+  padding: 0.8rem 1.2rem;
+  background-color: #0288d1;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
+  margin: 0.5rem;
+}
+
+.logButton:hover, .toggleButton:hover {
+  background-color: #0277bd;
+  transform: scale(1.05);
+}
+
+.infoSection {
+  margin-top: 3rem;
+  background-color: #e0f2f1;
+  border-radius: 10px;
+  padding: 1.2rem;
+  color: #004d40;
+}
+
+.infoSection h3 {
+  text-align: center;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: #00695c;
+  border-bottom: 2px solid #80cbc4;
+  padding-bottom: 0.5rem;
+}
+
+.infoSection p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.earthSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 2rem;
+ background-color: rgb(18, 17, 17);
+padding: 1rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 150, 136, 0.1);
+  width: 90%; /* or 100% or a fixed width like 800px */
+  max-width: 1200px; /* prevents it from getting too wide on large screens */
+  margin: 0 auto
+  
+
+}
+
+
+.earthText h3 {
+  margin-top: 1rem;
+  font-size: 3rem;
+  color: #00796b;
+}
+
+.earthText p {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+  color: #004d40;
+  line-height: 1.5;
+}
+.inputWithBottle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.bottleAnimation {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* //sleepSection// */
+
+
+.sleepSection {
+  margin-top: 3rem;
+  padding: 1.5rem;
+  background-color: #f1f8e9;
+  border-radius: 12px;
+  color: #35626e;
+  box-shadow: 0 4px 12px rgba(76, 175, 80, 0.2);
+}
+
+.sleepSection h2 {
+  text-align: center;
+  font-size: 1.6rem;
+  color: #38708e;
+  margin-bottom: 1rem;
+}
+
+.sleepInputs {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.sleepInputs label {
+  font-weight: 500;
+  color: #1e5869;
+}
+
+.sleepInputs input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 2px solid #81cdd5;
+  border-radius: 6px;
+  margin-top: 4px;
+}
+
+.sleepInputs button {
+  margin-top: 1rem;
+  padding: 0.7rem 1rem;
+  background-color: #66aabb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.sleepInputs button:hover {
+  background-color: #2f7f8b;
+}
+
+.sleepSummary {
+  background-color: #e8f5e9;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+  color: #2e657d;
+}
+
+.sleepTips {
+  margin-top: 2rem;
+}
+
+.sleepTips h3 {
+  font-size: 1.3rem;
+   color: #2e657d;
+  margin-bottom: 0.5rem;
+  border-bottom: 2px solid #aed581;
+  padding-bottom: 0.4rem;
+}
+
+.sleepTips ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+  line-height: 1.6;
+   color: #2e657d;
+}

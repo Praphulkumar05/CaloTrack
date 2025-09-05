@@ -1,0 +1,99 @@
+.footer {
+  background-color: #f2f6f8;
+  padding: 30px 20px;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.05);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  width: 100%;
+  margin-top:150px;
+  position:relative;
+  
+}
+
+.footerContent {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.dark {
+  background-color: black;
+  color: #f0f0f0;
+  width: 110%;     
+  margin: 0 -5%;
+  top: 40px; 
+    
+}
+
+
+.top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 10px;
+ 
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 22px;
+  color: #2d7f6f;
+}
+
+.dark .logo {
+  color: #80cbc4;
+}
+
+.links {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.links a {
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.2s ease;
+}
+
+.dark .links a {
+  color: #ddd;
+}
+
+.links a:hover {
+  color: #2d7f6f;
+}
+
+.dark .links a:hover {
+  color: #80cbc4;
+}
+
+.scrollBtn {
+  margin-top: 10px;
+  background-color: #2d7f6f;
+  color: #fff;
+  padding: 8px 14px;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.scrollBtn:hover {
+  background-color: #1f5f55;
+  transform: scale(1.05);
+}
+
+.copy {
+  font-size: 13px;
+  color: #777;
+  margin-top: 15px;
+}
+
+.dark .copy {
+  color: #bbb;
+}

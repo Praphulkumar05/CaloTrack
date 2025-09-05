@@ -1,0 +1,278 @@
+.scanPage {
+  background-color: #D6EDFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.scanContainer {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+}
+
+.backLink {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #007bff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.backLink::before {
+  content: "←";
+  font-size: 20px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+}
+
+.card {
+  /* background-color: white;    */
+  background-color: #007bff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.scannerBox {
+  width: 150px;
+  height: 150px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  margin: 0 auto 20px;
+  border: 1px dashed #cccccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  color: #cccccc;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: 600;
+  color: #333333;
+  margin: 0 0 8px;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #0a0a0a;
+  margin: 0 0 24px;
+}
+
+.scanButton {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 14px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+.scanButton:hover {
+  background-color: #0056b3;
+  
+}
+
+.or {
+  margin: 20px 0;
+  font-size: 14px;
+  color: #999999;
+  position: relative;
+  text-align: center;
+}
+
+.or::before,
+.or::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  height: 1px;
+  background-color: #e0e0e0;
+}
+
+.or::before {
+  left: 0;
+  width: calc(50% - 60px);
+}
+
+.or::after {
+  right: 0;
+  width: calc(50% - 60px);
+}
+
+.inputRow {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.input {
+  flex-grow: 1;
+  padding: 12px;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.input::placeholder {
+  color: #aaaaaa;
+}
+
+.searchButton {
+  background-color: #e9ecef;
+  color: #495057;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.searchButton:hover {
+  background-color: #d8dee3;
+}
+
+.sampleBarcodes {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: left;
+}
+
+.sampleBarcodes p {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333333;
+  margin: 0 0 10px;
+}
+
+.sampleBarcodes ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 20px;
+  row-gap: 8px;
+}
+
+.sampleBarcodes li {
+  font-size: 14px;
+  color: #007bff;
+  cursor: pointer;
+}
+
+.sampleBarcodes li:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 576px) {
+  .card {
+    padding: 20px;
+  }
+}
+
+.video {
+  width: 100%;
+  height: 250px; /* adjust as needed */
+  object-fit: cover;
+  border-radius: 8px;
+ 
+}
+
+.placeholder {
+  font-size: 16px;
+  color: #888888;
+  text-align: center;
+}
+
+
+.tabHeader {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.tabHeader button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #e9ecef;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s;
+  color: black;
+}
+
+.tabHeader button:hover {
+  background-color: #d8dee3;
+}
+
+.tabHeader .activeTab {
+  background-color: #007bff;
+  color: #fff;
+}
+.suggestions {
+  background-color:white;
+  color:#007bff ;
+  border-radius: 8px;
+  margin-top: 5px;
+  max-height: 150px;
+  overflow-y: auto;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.suggestionItem {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.suggestionItem:hover {
+  background-color: #427197;
+}
+.toastContainer {
+  top: 20px;         /* distance from top */
+  right: 20px;       /* distance from right */
+  width: 300px;      /* toast width */
+  z-index: 9999;     /* appear above other elements */
+}
+
+/* Optional: Customize toast appearance */
+.Toastify__toast--error {
+  background-color: #ff4d4f; /* red background for errors */
+  color: white;              /* white text */
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+.foodInfo{
+  background-color: #007bff;
+  
+}
+
+

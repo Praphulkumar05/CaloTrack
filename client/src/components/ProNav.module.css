@@ -1,0 +1,97 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #060707df;
+}
+
+.navbarLinks {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.brandLink {
+  color:  #158466;
+  text-decoration: none;
+  font-weight: bold;
+}
+.dropdown {
+  position: relative;
+}
+
+.dropdownToggle {
+  background-color: #1e1e1e;
+  color: white;
+  font-weight: 600;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+.Roadmap{
+    background-color: #1e1e1e;
+  color: white;
+  
+  font-weight: 600;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  transition: background 0.3s;
+
+}
+
+.dropdownToggle:hover {
+  background-color: #2c2c2c;
+}
+
+.arrow {
+  font-size: 12px;
+  color: #3c99ff;
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  background-color: #1e1e1e;
+  border-radius: 18px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  padding: 10px 0;
+  display: none;
+  flex-direction: column;
+  width: 180px;
+  z-index: 10;
+}
+
+.dropdown:hover .dropdownMenu {
+  display: flex;
+}
+
+.dropdownMenu li {
+  padding: 10px 20px;
+}
+
+.dropdownMenu li a {
+  text-decoration: none;
+  color: #aaa;
+  font-size: 15px;
+  display: block;
+  transition: color 0.2s;
+}
+
+.dropdownMenu li a:hover {
+  color: white;
+}
+

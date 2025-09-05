@@ -1,0 +1,411 @@
+.container {
+  min-height: 100vh;
+  background: linear-gradient(to right, #1e3a8a, #06b6d4);
+  color: white;
+  padding-bottom: 40px;
+}
+.h2 {
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 28px;
+  background: linear-gradient(90deg, #0d1b63, #0073b1, #00c3ff);
+  border-radius: 8px 8px 0 0;
+  color: #fff;
+}
+.navLeft {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.navTitle {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+  color: white;
+}
+
+.navSubtitle {
+  font-size: 12px;
+  opacity: 0.8;
+  margin: 0;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.backBtn {
+  background: rgba(255, 255, 255, 0.15);
+  border: none;
+  border-radius: 8px;
+  padding: 6px 10px;
+  cursor: pointer;
+  color: #fff;
+  transition: background 0.2s ease-in-out;
+}
+
+.backBtn:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.brand {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.subtitle {
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.navButton {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 14px;
+}
+
+.navButton:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.searchSection {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.searchSection h2 {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.highlight {
+  color: #00e6ff;
+  font-weight: 500;
+  font-size: larger;
+}
+
+.searchSection p {
+  margin-top: 8px;
+  opacity: 0.9;
+}
+
+.searchBar {
+  margin: 20px auto 0;
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 999px;
+  padding: 10px 16px;
+  width: 420px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.searchIcon {
+  color: rgba(255, 255, 255, 0.7);
+  margin-right: 8px;
+}
+
+.searchInput {
+  flex: 1;
+  border: none !important;
+  outline: none !important;
+  background: transparent;
+  font-size: 16px;
+  color: #fff;
+  box-shadow: none !important;
+}
+
+.searchInput:hover,
+.searchInput:focus,
+.searchInput:focus-visible,
+.searchInput:active {
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.searchInput::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.analyzeBtn {
+  background: radial-gradient(
+    circle,
+    rgba(15, 4, 4, 1) 0%,
+    rgba(74, 74, 199, 1) 0%,
+    rgba(0, 218, 242, 1) 100%
+  );
+  border: none;
+  border-radius: 8px;
+  padding: 6px 12px;
+  cursor: pointer;
+  color: white;
+  font-weight: 500;
+  opacity: 0.6;
+}
+
+.analyzeBtn:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* response */
+
+.popularTitle {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  margin-bottom: 10px;
+}
+
+.popularGrid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.popularCard {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  padding: 20px;
+  text-align: center;
+  width: 200px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  backdrop-filter: blur(10px);
+  color: white;
+}
+
+.popularCard:hover {
+  transform: translateY(-6px);
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.25);
+}
+
+.popularIcon {
+  font-size: 28px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 12px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #00cfff;
+}
+
+.resultCard {
+  margin: 40px auto;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  max-width: 1000px;
+  height: 700px;
+}
+
+.loading {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.error {
+  margin-top: 20px;
+  color: #ffcccc;
+  font-weight: bold;
+  text-align: center;
+}
+.proteinBtn {
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  padding: 6px 14px;
+  font-size: 13px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.proteinBtn:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+.servingControl {
+  background: #0f0404;
+  background: linear-gradient(
+    90deg,
+    rgba(15, 4, 4, 1) 0%,
+    rgba(98, 98, 179, 1) 0%,
+    rgba(0, 218, 242, 1) 100%
+  );
+  max-width: 400px;
+  height: 150px;
+  margin: 0 auto; /* Centers horizontally */
+  display: flex;
+  flex-direction: column; /* ✅ Stack vertically */
+  align-items: center; /* ✅ Center horizontally */
+  justify-content: center;
+  gap: 8px; /* Space between text and controls */
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.servingControl p {
+  color: white; /* Or any contrasting color */
+  font-size: 18px;
+  margin-bottom: 5px; /* ✅ Little upward spacing */
+  font-weight: bold;
+}
+.icon {
+  font-size: 20px;
+}
+.titleRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+.controlButtons {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center the group horizontally */
+  gap: 10px; /* Equal space between buttons and input */
+}
+.controlButtons button {
+  background: #0f0404;
+  background: linear-gradient(
+    90deg,
+    rgba(15, 4, 4, 1) 0%,
+    rgba(125, 125, 173, 1) 0%,
+    rgba(0, 218, 242, 1) 100%
+  );
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.2s;
+}
+
+.controlButtons button:hover {
+  background-color: #0056b3;
+}
+
+.controlButtons span {
+  font-weight: bold;
+}
+
+.controlButtons input {
+  width: 60px; /* Fixed width so spacing is consistent */
+  text-align: center;
+  padding: 6px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+.nutrientContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px; /* Space between Calories and small boxes row */
+}
+
+.nutrientList {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* Two columns */
+  grid-template-rows: auto;
+  grid-gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nutrientBox {
+  display: flex;
+  flex-direction: column; /* Icon above text */
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+  padding: 12px;
+  border-radius: 8px;
+  color: white;
+  gap: 8px; /* Space between icon and text */
+  text-align: center;
+   margin-top: 50px;
+}
+
+.caloriesBox {
+  background: #eeaeca;
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 0%
+  );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 150px;
+  border-radius: 8px;
+  color: white;
+  text-align: center;
+  gap: 10px;
+}
+
+.smallBoxesRow {
+  display: flex;
+  gap: 10px; /* Space between the small boxes */
+}
+
+.smallBox {
+background: linear-gradient(
+  0deg, 
+  rgba(34, 193, 195, 0.5) 0%,   /* 0.5 = 50% opacity */
+  rgba(253, 187, 45, 0.5) 100%
+);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 8px;
+  color: white;
+  gap: 8px; /* space between icon and text */
+  width: 120px;
+  height: 80px;
+}
+/* Optional: individual small boxes color */
+.nutrientBox:nth-child(2) {
+  background-color: #4d79ff;
+} /* Protein */
+.nutrientBox:nth-child(3) {
+  background-color: #f39c12;
+} /* Fat */
+.nutrientBox:nth-child(4) {
+  background-color: #2ecc71;
+} /* Carbs */
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+

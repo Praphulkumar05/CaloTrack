@@ -1,0 +1,113 @@
+/* TermsOfUse.module.css */
+.termsPage {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
+  padding: 2rem;
+}
+
+.container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.animationContainer {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #0e7490, #3b82f6, #4f46e5);
+  padding: 2rem;
+}
+
+.lottieAnimation {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
+
+.contentContainer {
+  flex: 2;
+  padding: 2rem;
+  overflow-y: auto;
+  max-height: 80vh;
+  color: black;
+}
+
+.contentContainer h1 {
+  font-size: 2rem;
+  color: #333;
+  border-bottom: 2px solid #333;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.contentContainer h2 {
+  font-size: 1.5rem;
+  color: #555;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.contentContainer p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.contentContainer ul {
+  list-style-type: disc;
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.contentContainer ul li {
+  margin-bottom: 0.5rem;
+}
+
+.contentContainer strong {
+  font-weight: bold;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .termsPage {
+    padding: 1rem;
+  }
+  
+  .container {
+    flex-direction: column;
+  }
+  
+  .animationContainer {
+    padding: 1rem;
+    min-height: 250px;
+  }
+  
+  .contentContainer {
+    padding: 1.5rem;
+    max-height: none;
+  }
+}
+
+/* Scrollbar styling for content container */
+.contentContainer::-webkit-scrollbar {
+  width: 8px;
+}
+
+.contentContainer::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.contentContainer::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+.contentContainer::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}

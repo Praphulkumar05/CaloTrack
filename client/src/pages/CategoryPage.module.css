@@ -1,0 +1,54 @@
+.container {
+  padding: 2rem;
+  background: #f1fef4;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.heading {
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  color: #2e7d32;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.card {
+  width: 300px;
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.foodImg {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.content {
+  padding: 1rem;
+  background: #e0f2f1;
+}
+
+.content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.content li {
+  margin: 0.4rem 0;
+  font-size: 0.95rem;
+}
