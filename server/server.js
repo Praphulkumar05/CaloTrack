@@ -8,7 +8,18 @@ const app = express();
 // -------------------
 // Middlewares
 // -------------------
-app.use(cors());
+// app.use(cors());
+const allowedOrigins = [
+  "http://localhost:3000",            // local frontend
+  "https://calo-track-lime.vercel.app" // deployed frontend
+];
+
+app.use(cors({
+  origin: allowedOrigins,
+  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+  credentials: true
+}));
+
 app.use(express.json());
 
 // -------------------
@@ -51,4 +62,3 @@ mongoose.connect(process.env.MONGO_URI)
         );
     })
     .catch((err) => console.error("❌ MongoDB Connection Error:", err));
-    
